@@ -171,7 +171,7 @@ function gravity_custom_prepopulate_js()
     
 }
 
-add_filter('wp_head', 'gravity_custom_prepopulate_js');
+add_filter('wp_footer', 'gravity_custom_prepopulate_js');
 
 
 /* tracking email */
@@ -186,6 +186,7 @@ function sakka_save_field_value($value, $lead, $field, $form)
     return $value;
 }
 add_filter('wp_head', 'sakka_tracking_email');
+
 function sakka_tracking_email()
 {
 	$sakka_actid = esc_attr(get_option('sakka_actid','0'));
