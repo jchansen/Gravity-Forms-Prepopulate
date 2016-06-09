@@ -171,7 +171,7 @@ function gravity_custom_prepopulate_js()
     
 }
 
-add_filter('wp_footer', 'gravity_custom_prepopulate_js');
+add_filter('wp_footer', 'gravity_custom_prepopulate_js', 100);
 
 
 /* tracking email */
